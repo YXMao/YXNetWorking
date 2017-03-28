@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "YXNetWorking"
   s.version      = "0.0.1"
-  s.summary      = "A short description of YXNetWorking."
+  s.summary      = “It’s slightly framework based on AFNetWorking.”
   s.description  = <<-DESC
                    YXNetWorking is simple network framework based on AFNetWorking
                    DESC
