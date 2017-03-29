@@ -7,12 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "WJPopAdAPI.h"
+#import "YXPopAdAPI.h"
 #import "MBProgressHUD+MJ.h"
 
 @interface ViewController ()<YXHttpDelegate>
 
-@property(strong, nonatomic) WJPopAdAPI * api;
+@property(strong, nonatomic) YXPopAdAPI * api;
 
 @end
 
@@ -23,13 +23,16 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.api = [[WJPopAdAPI alloc]init];
+    self.api = [[YXPopAdAPI alloc]init];
     self.api.delegate = self;
     
     [MBProgressHUD showMessage:@"开始加载..." toView:self.view];
     [self.api requestPopAd];
     
 }
+
+
+#pragma mark - YXHttpDelegate
 
 - (void)requestFinishedWithResponse:(YXHttpResponse *)response{
     [MBProgressHUD hideHUDForView:self.view];
@@ -38,6 +41,7 @@
     NSLog(@"%@,result:%@",response.request.identity,response.parseResult);
     NSLog(@"******************************************************************************************\n");
 }
+
 - (void)requestFailedWithResponse:(YXHttpResponse *)response{
     [MBProgressHUD hideHUDForView:self.view];
     [MBProgressHUD showError:@"请求失败"];

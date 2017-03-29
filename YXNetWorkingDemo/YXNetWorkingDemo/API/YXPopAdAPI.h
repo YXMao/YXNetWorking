@@ -10,7 +10,7 @@
 
 #define NET_POP_ADS_TAG             @"NET_POP_ADS_TAG"//首页弹窗广告
 
-@interface WJPopAdAPI : YXBaseAPI
+@interface YXPopAdAPI : YXBaseAPI
 
 - (YXHttpRequest *)requestPopAd;
 

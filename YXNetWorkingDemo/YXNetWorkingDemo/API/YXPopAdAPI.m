@@ -6,9 +6,9 @@
 //  Copyright © 2017年 maoyuxiang. All rights reserved.
 //
 
-#import "WJPopAdAPI.h"
+#import "YXPopAdAPI.h"
 
-@implementation WJPopAdAPI
+@implementation YXPopAdAPI
 
 #pragma mark - 请求接口
 - (YXHttpRequest *)requestPopAd{
