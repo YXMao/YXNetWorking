@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/YXMao/YXNetWorking.git", :tag => "#{s.version}" }
   s.source_files  = "YXNetWorking/*.{h,m}"
+  s.resources = 'YXNetWorking/Assets/*.png'
   s.requires_arc = true
   s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
   s.dependency 'MJExtension'
