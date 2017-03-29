@@ -164,7 +164,7 @@
 - (void)logForRequestQueue{
     NSLog(@"当前请求队列：\n");
     [self.requestQueue enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        NSLog(@"request%lu:%@",(unsigned long)idx,obj);
+        NSLog(@"request:%@",obj);
     }];
 }
 
