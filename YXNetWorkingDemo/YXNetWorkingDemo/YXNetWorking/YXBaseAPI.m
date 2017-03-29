@@ -150,22 +150,22 @@
 
 - (void)removeTaskFromRequestQueue:(NSURLSessionDataTask *)task{
     
-//    [self.requestQueue enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//        YXHttpRequest * request = (YXHttpRequest *)obj;
-//        if ([task isEqual:request.task]) {
-//            [self.requestQueue removeObject:request];
-//            *stop = YES;
-//        }
-//    }];
+    [self.requestQueue enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        YXHttpRequest * request = (YXHttpRequest *)obj;
+        if ([task isEqual:request.task]) {
+            [self.requestQueue removeObject:request];
+            *stop = YES;
+        }
+    }];
     
     [self logForRequestQueue];
 }
 
 - (void)logForRequestQueue{
-//    NSLog(@"当前请求队列：\n");
-//    [self.requestQueue enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//        NSLog(@"request:%@",obj);
-//    }];
+    NSLog(@"当前请求队列：\n");
+    [self.requestQueue enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSLog(@"request%lu:%@",idx,obj);
+    }];
 }
 
 
