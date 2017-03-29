@@ -21,6 +21,7 @@
 		981EFC361E88ED9B00093F54 /* YXHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 981EFC2F1E88ED9B00093F54 /* YXHttpResponse.m */; };
 		981EFC371E88ED9B00093F54 /* YXNetWorkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 981EFC311E88ED9B00093F54 /* YXNetWorkConfig.m */; };
 		981EFC3B1E88EDB100093F54 /* YXPopAdAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 981EFC3A1E88EDB100093F54 /* YXPopAdAPI.m */; };
+		986B393B1E8B8EEC00F71FED /* SourcesBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 986B393A1E8B8EEC00F71FED /* SourcesBundle.bundle */; };
 		98F764A21E8B457F00DABB75 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F764A11E8B457F00DABB75 /* MBProgressHUD+MJ.m */; };
 		B96FB2FA8711C199C7103CA1 /* libPods-YXNetWorkingDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F4166E655678F41A24AD64 /* libPods-YXNetWorkingDemo.a */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 		981EFC311E88ED9B00093F54 /* YXNetWorkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXNetWorkConfig.m; sourceTree = "<group>"; };
 		981EFC391E88EDB100093F54 /* YXPopAdAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXPopAdAPI.h; sourceTree = "<group>"; };
 		981EFC3A1E88EDB100093F54 /* YXPopAdAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXPopAdAPI.m; sourceTree = "<group>"; };
+		986B393A1E8B8EEC00F71FED /* SourcesBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SourcesBundle.bundle; sourceTree = "<group>"; };
 		98F764A01E8B457F00DABB75 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		98F764A11E8B457F00DABB75 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		D2F4166E655678F41A24AD64 /* libPods-YXNetWorkingDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YXNetWorkingDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +185,7 @@
 		981EFC231E88ED9B00093F54 /* YXNetWorking */ = {
 			isa = PBXGroup;
 			children = (
+				986B393A1E8B8EEC00F71FED /* SourcesBundle.bundle */,
 				98F764A01E8B457F00DABB75 /* MBProgressHUD+MJ.h */,
 				98F764A11E8B457F00DABB75 /* MBProgressHUD+MJ.m */,
 				981EFC271E88ED9B00093F54 /* YXAPIParser.h */,
@@ -328,6 +331,7 @@
 			files = (
 				981EFC001E88ED7700093F54 /* LaunchScreen.storyboard in Resources */,
 				981EFBFD1E88ED7700093F54 /* Assets.xcassets in Resources */,
+				986B393B1E8B8EEC00F71FED /* SourcesBundle.bundle in Resources */,
 				981EFBFB1E88ED7700093F54 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
