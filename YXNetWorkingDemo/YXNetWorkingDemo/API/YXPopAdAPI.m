@@ -26,7 +26,7 @@
     [super parseWithResponse:response];
     
     if ([response.request.identity isEqualToString:NET_POP_ADS_TAG]) {
-        //检查登录是否成功
+        //弹窗广告的返回数据解析
         [self parsePopAdsWithResponse:response];
     }
 }

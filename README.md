@@ -50,7 +50,7 @@
 - (void)parseWithResponse:(YXHttpResponse *)response{
     [super parseWithResponse:response];
     if ([response.request.identity isEqualToString:NET_POP_ADS_TAG]) {
-        //检查登录是否成功
+        //弹窗广告的返回数据解析
         [self parsePopAdsWithResponse:response];
     }
 }
@@ -83,9 +83,7 @@ self.api.delegate = self;
 - (void)requestFinishedWithResponse:(YXHttpResponse *)response{
     [MBProgressHUD hideHUDForView:self.view];
     [MBProgressHUD showSuccess:@"请求成功"];
-    NSLog(@"返回结果:\n******************************************************************************************");
     NSLog(@"%@,result:%@",response.request.identity,response.parseResult);
-    NSLog(@"******************************************************************************************\n");
 }
 
 - (void)requestFailedWithResponse:(YXHttpResponse *)response{
